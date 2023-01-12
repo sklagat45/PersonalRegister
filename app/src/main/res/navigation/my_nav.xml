@@ -36,5 +36,16 @@ app:startDestination="@id/listFragment">
     <argument
         android:name="currentUser"
         app:argType="com.sklagat46.salicprac.models.User" />
+    <action
+        android:id="@+id/action_updateFragment_to_testingFragment"
+        app:destination="@id/testingFragment" />
 </fragment>
+    <fragment
+        android:id="@+id/testingFragment"
+        android:name="com.sklagat46.salicprac.views.TestingFragment"
+        android:label="TestingFragment" >
+        <action
+            android:id="@+id/action_testingFragmentFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
+    </fragment>
 </navigation>

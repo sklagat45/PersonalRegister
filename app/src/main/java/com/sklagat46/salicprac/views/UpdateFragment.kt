@@ -53,7 +53,7 @@ class UpdateFragment : Fragment() {
 
             Toast.makeText(requireContext(), "user updated successfully", Toast.LENGTH_SHORT).show()
 
-            findNavController().navigate((R.id.action_updateFragment_to_listFragment))
+            findNavController().navigate((R.id.action_updateFragment_to_testingFragment))
         } else {
             Toast.makeText(
                 requireContext(),
